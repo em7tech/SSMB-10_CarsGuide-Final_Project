@@ -22,7 +22,7 @@ public class DriverFactory {
 	private static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY
 				                     + "@hub-cloud.browserstack.com/wd/hub";
 	
-	//private static final String LOCAL_GRID_URL = "http://192.168.86.118:4444/wd/hub";
+	private static final String LOCAL_GRID_URL = "http://192.168.1.37:4444/wd/hub";
 	  
 	private DriverFactory(){
 		
@@ -99,11 +99,11 @@ public class DriverFactory {
                 
                 caps.setCapability(ChromeOptions.CAPABILITY, options);
                 
-//                try {
-//					driver = new RemoteWebDriver(new URL(LOCAL_GRID_URL), caps);
-//				} catch (MalformedURLException e) {
-//					e.printStackTrace();
-//				}
+                try {
+					driver = new RemoteWebDriver(new URL(LOCAL_GRID_URL), caps);
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
             }
             else if(DriverFactory.browser.toUpperCase().contentEquals("WIN-CHROME-CLOUD")) {
             	ChromeOptions options = new ChromeOptions();
