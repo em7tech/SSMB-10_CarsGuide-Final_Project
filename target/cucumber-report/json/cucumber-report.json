@@ -1,0 +1,3574 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5259930800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.i_am_on_the_home_page_of_cars_guide_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:27:25.282Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2999383300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Validating Search cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validating-search-cars-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 980151000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 657819500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I move to the top menu",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.i_move_to_the_top_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy + sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1660021700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on \"Search Cars\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search Cars\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 338262100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "select carbrand as \"Audi\" from Anymake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carbrand_as_from_anymake_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 336377800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "select carmodel as \"A6\" from SelectModel dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A6\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carmodel_as_from_select_model_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190211700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "select location as \"NSW - Sydney\" from AnyLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NSW - Sydney\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_location_as_from_any_location_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155641300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "select price as \"$25,000\" from price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$25,000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_price_as_from_price_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7657094100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on Find_My_Next_Car button",
+            "match": {
+              "location": "com.carguide.steps.SearchCarsSteps.i_click_on_find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159856600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should see list of search cars \"under $25,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"under $25,000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.i_should_see_list_of_search_cars(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13466200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the page title should be \"Audi A6 Under 25000 for Sale Sydney NSW | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi A6 Under 25000 for Sale Sydney NSW | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          },
+          {
+            "name": "@Search-Cars-Positive"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4572673300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.i_am_on_the_home_page_of_cars_guide_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:27:45.823Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1733030200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Validating Search cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validating-search-cars-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1295011800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 501241000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I move to the top menu",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.i_move_to_the_top_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy + sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1363323000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on \"Search Cars\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search Cars\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 234238600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "select carbrand as \"BMW\" from Anymake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carbrand_as_from_anymake_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 332457300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "select carmodel as \"3 Series\" from SelectModel dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3 Series\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carmodel_as_from_select_model_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124816500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "select location as \"NSW - New England\" from AnyLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NSW - New England\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_location_as_from_any_location_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198347200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "select price as \"$20,000\" from price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$20,000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_price_as_from_price_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6120337800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on Find_My_Next_Car button",
+            "match": {
+              "location": "com.carguide.steps.SearchCarsSteps.i_click_on_find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199011400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should see list of search cars \"under $20,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"under $20,000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.i_should_see_list_of_search_cars(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4987200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the page title should be \"Bmw 3 Series Under 20000 for Sale New England NSW | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bmw 3 Series Under 20000 for Sale New England NSW | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          },
+          {
+            "name": "@Search-Cars-Positive"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4550988500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.i_am_on_the_home_page_of_cars_guide_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:28:02.520Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1694458400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "Validating Used cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validating-used-cars-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1275545900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1336585200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I move to the top menu",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.i_move_to_the_top_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy + sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2256600700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I click on \"Used\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Used\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 468999400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "select carbrand as \"Audi\" from Anymake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carbrand_as_from_anymake_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250976900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "select carmodel as \"A6\" from SelectModel dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A6\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carmodel_as_from_select_model_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188955700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "select location as \"NSW - Sydney\" from AnyLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NSW - Sydney\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_location_as_from_any_location_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146719700,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "select price as \"$25,000\" from price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$25,000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_price_as_from_price_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5684364400,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click on Find_My_Next_Car button",
+            "match": {
+              "location": "com.carguide.steps.SearchCarsSteps.i_click_on_find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31839800,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I should see list of search cars \"under $25,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"under $25,000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.i_should_see_list_of_search_cars(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5973600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the page title should be \"Used Audi A6 Under 25000 for Sale Sydney NSW | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Used Audi A6 Under 25000 for Sale Sydney NSW | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          },
+          {
+            "name": "@Used-Cars-Positive"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4343165400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.i_am_on_the_home_page_of_cars_guide_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:28:20.432Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1704957200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Validating Used cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validating-used-cars-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1084774900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 870819800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I move to the top menu",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.i_move_to_the_top_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy + sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1897709000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I click on \"Used\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Used\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319794900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "select carbrand as \"BMW\" from Anymake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carbrand_as_from_anymake_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198071400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "select carmodel as \"3 Series\" from SelectModel dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3 Series\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carmodel_as_from_select_model_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167897300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "select location as \"NSW - New England\" from AnyLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NSW - New England\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_location_as_from_any_location_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166555500,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "select price as \"$20,000\" from price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$20,000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_price_as_from_price_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7228509700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click on Find_My_Next_Car button",
+            "match": {
+              "location": "com.carguide.steps.SearchCarsSteps.i_click_on_find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96742000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I should see list of search cars \"under $20,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"under $20,000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.i_should_see_list_of_search_cars(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69812000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the page title should be \"Used Bmw 3 Series Under 20000 for Sale New England NSW | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Used Bmw 3 Series Under 20000 for Sale New England NSW | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          },
+          {
+            "name": "@Used-Cars-Positive"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4722903200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.i_am_on_the_home_page_of_cars_guide_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:28:38.630Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1673370200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 70,
+        "name": "Validating New cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validating-new-cars-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1226654700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 663182900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I move to the top menu",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.i_move_to_the_top_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy + sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2365509300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click on \"New\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294457200,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "select carbrand as \"Audi\" from Anymake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carbrand_as_from_anymake_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187229900,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "select carmodel as \"A6\" from SelectModel dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"A6\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carmodel_as_from_select_model_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151831400,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "select location as \"NSW - Sydney\" from AnyLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NSW - Sydney\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_location_as_from_any_location_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151594800,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "select price as \"$100,000\" from price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$100,000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_price_as_from_price_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3034651000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I click on Find_My_Next_Car button",
+            "match": {
+              "location": "com.carguide.steps.SearchCarsSteps.i_click_on_find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1178810100,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I should see list of search cars \"under $100,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"under $100,000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.i_should_see_list_of_search_cars(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6978500,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "the page title should be \"New Audi A6 Under 100000 for Sale Sydney NSW | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Audi A6 Under 100000 for Sale Sydney NSW | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          },
+          {
+            "name": "@New-Cars-Positive"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4876325200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\" of CarsGuide website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.i_am_on_the_home_page_of_cars_guide_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:28:54.333Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1690347500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "Validating New cars page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validating-new-cars-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1030307700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 410540900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I move to the top menu",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.i_move_to_the_top_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Menu"
+                ]
+              },
+              {
+                "cells": [
+                  "buy + sell"
+                ]
+              },
+              {
+                "cells": [
+                  "reviews"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1938234800,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click on \"New\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.i_click_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 351124100,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "select carbrand as \"BMW\" from Anymake dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carbrand_as_from_anymake_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217713500,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "select carmodel as \"3 Series\" from SelectModel dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3 Series\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_carmodel_as_from_select_model_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172358400,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "select location as \"NSW - New England\" from AnyLocation dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NSW - New England\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_location_as_from_any_location_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161741600,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "select price as \"$150,000\" from price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$150,000\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.select_price_as_from_price_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6902051200,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I click on Find_My_Next_Car button",
+            "match": {
+              "location": "com.carguide.steps.SearchCarsSteps.i_click_on_find_my_next_car_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44878200,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I should see list of search cars \"under $150,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"under $150,000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.carguide.steps.SearchCarsSteps.i_should_see_list_of_search_cars(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4129600,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "the page title should be \"New Bmw 3 Series Under 150000 for Sale New England NSW | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Bmw 3 Series Under 150000 for Sale New England NSW | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search-Cars"
+          },
+          {
+            "name": "@New-Cars-Positive"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to validate Search cars page is working fine.",
+    "description": "  In order to validate the search cars page working fine \n  we will do acceptance testing as per the requirement",
+    "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CarGuidesSearchCars.feature",
+    "tags": [
+      {
+        "name": "@Search-Cars",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8975300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4645221100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1217726300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316541800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3175994400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on sign in link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5983200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sign in page should display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:29:12.151Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1836216600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User able to sign in with valid email and valid password",
+        "description": "",
+        "id": "this-functionality-describe-the-signin-feature-for-carguide.au-application;user-able-to-sign-in-with-valid-email-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 923820600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 405533500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on sign in tab",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 324906600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enter email address is \"bsemran@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bsemran@hotmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198464500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enter password is \"Mse67890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mse67890\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85770500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user click on sign in button",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5314530000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "home page should display \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 256052800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user name \"Mike\" display at the top right corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mike\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.user_name_display_at_the_top_right_corner(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Debug"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6984000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4468181400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 792169900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7984900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2717317300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on sign in link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9972800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sign in page should display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:29:30.915Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1618127300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User not be able to sign in with invalid email and invalid password",
+        "description": "",
+        "id": "this-functionality-describe-the-signin-feature-for-carguide.au-application;user-not-be-able-to-sign-in-with-invalid-email-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 875469300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 582330900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user click on sign in tab",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 250321700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user enter email address is \"invalid89@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid89@hotmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129885700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user enter password is \"invalid67890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid67890\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59932200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user click on sign in button",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5982800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "sign in page display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1059945600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "error message should display with \"Wrong email or password.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong email or password.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.error_message_should_display_with(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5533000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4577322200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 287572400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50863700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2737180000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on sign in link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7978800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sign in page should display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:29:43.553Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1608460800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "User not be able to sign in with valid email and empty password",
+        "description": "",
+        "id": "this-functionality-describe-the-signin-feature-for-carguide.au-application;user-not-be-able-to-sign-in-with-valid-email-and-empty-password",
+        "after": [
+          {
+            "result": {
+              "duration": 855458800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 533611100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user click on sign in tab",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 264578500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user enter email address is \"bsemran@hotmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bsemran@hotmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68778600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user enter password is \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55702700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user click on sign in button",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2986500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "sign in page display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41339600,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "warning sign \"Can\u0027t be blank\" should pop up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Can\u0027t be blank\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.warning_sign_should_pop_up(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5978300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4539099200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74111400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5983500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2715979300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on sign in link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4982100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sign in page should display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:29:54.662Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1629652300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "User not be able to sign in with empty email and empty password",
+        "description": "",
+        "id": "this-functionality-describe-the-signin-feature-for-carguide.au-application;user-not-be-able-to-sign-in-with-empty-email-and-empty-password",
+        "after": [
+          {
+            "result": {
+              "duration": 863581600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 533599500,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user click on sign in tab",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98345200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user enter email address is \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76175500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user enter password is \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55850300,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user click on sign in button",
+            "match": {
+              "location": "com.carguide.steps.SignInPageSteps.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3991600,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "sign in page display \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.carguide.steps.SignInPageSteps.sign_in_page_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42425000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "warning sign \"Can\u0027t be blank\" should pop up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Can\u0027t be blank\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.warning_sign_should_pop_up(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "This functionality describe the signIn feature for CarGuide.au application",
+    "description": "  Description: Explains how sign in function works",
+    "id": "this-functionality-describe-the-signin-feature-for-carguide.au-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CarGuidesSignIn.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5983200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4039813800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 858359700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11966300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3240951300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on sign up link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_up_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 113233100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sign up page should display with text \"SIGN UP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SIGN UP\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.sign_up_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8974400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the new page title should be \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.the_new_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:30:05.341Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1625956100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "1-User able to sign up by entering all the mandatory field",
+        "description": "",
+        "id": "this-feature-is-for-sign-up-functionality-for-carguide.au-app;1-user-able-to-sign-up-by-entering-all-the-mandatory-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1009568200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 227384200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter email address is \"em7@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"em7@gmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175531600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enter password is \"Msem7890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Msem7890\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140860300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enter first name is \"Mike\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mike\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_first_name_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125663800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enter last name is \"Davis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Davis\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_last_name_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96304200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user click on sign up button",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_click_on_sign_up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should see the verification message",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_should_see_the_verification_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7974000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5309821100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41889300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3613200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3160387500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on sign up link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_up_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1136102100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sign up page should display with text \"SIGN UP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SIGN UP\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.sign_up_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6980500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the new page title should be \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.the_new_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:30:17.070Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1652301300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "1-User able to sign up by entering all the mandatory field",
+        "description": "",
+        "id": "this-feature-is-for-sign-up-functionality-for-carguide.au-app;1-user-able-to-sign-up-by-entering-all-the-mandatory-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1030010800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 236740700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter email address is \"em8@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"em8@gmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167340700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enter password is \"Mshj9090\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mshj9090\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151109800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enter first name is \"Tim\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tim\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_first_name_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154848000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enter last name is \"Bunay\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bunay\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_last_name_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145823600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user click on sign up button",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_click_on_sign_up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should see the verification message",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_should_see_the_verification_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5984800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4350178100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 786804900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4982600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2776260600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on sign up link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_up_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 431545100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sign up page should display with text \"SIGN UP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SIGN UP\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.sign_up_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4630300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the new page title should be \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.the_new_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:30:30.290Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1677253000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "2-User not be able to sign up by missing mandatory field",
+        "description": "",
+        "id": "this-feature-is-for-sign-up-functionality-for-carguide.au-app;2-user-not-be-able-to-sign-up-by-missing-mandatory-field",
+        "after": [
+          {
+            "result": {
+              "duration": 898907200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84773500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user enter email address is \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166924700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user enter password is \"Msem7890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Msem7890\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114211800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user click on sign up button",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_click_on_sign_up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68717600,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "warning sign \"Can\u0027t be blank\" should pop up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Can\u0027t be blank\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.warning_sign_should_pop_up(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10970600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6111358600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 566566700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18950700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3267952000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on sign up link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_up_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27926000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sign up page should display with text \"SIGN UP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SIGN UP\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.sign_up_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2989700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the new page title should be \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.the_new_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:30:41.686Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1805323900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "3-User not be able to sign up without entering password with capital letter or numeric number",
+        "description": "",
+        "id": "this-feature-is-for-sign-up-functionality-for-carguide.au-app;3-user-not-be-able-to-sign-up-without-entering-password-with-capital-letter-or-numeric-number;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1007510200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 183429600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user enter email address is \"em7@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"em7@gmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141623900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user enter password is \"sem7890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sem7890\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82777900,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user click on sign up button",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_click_on_sign_up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "warning sign should pop up",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.warning_sign_should_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7135100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "not a existing user",
+            "match": {
+              "location": "com.carguide.steps.AppSteps.not_a_existing_user()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5354148400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigate to the application site \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.AppSteps.user_navigate_to_the_application_site(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72366700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "home page should display with text \"Sign up / Sign in\" on right hand corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.home_page_should_display_with_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3693400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the page title should be \"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarsGuide: Car Reviews - New \u0026 Used Car Sales\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.carguide.steps.HomePageSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3155886400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on sign up link",
+            "match": {
+              "location": "com.carguide.steps.HomePageSteps.user_click_on_sign_up_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 340294400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "sign up page should display with text \"SIGN UP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SIGN UP\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.sign_up_page_should_display(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4987400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the new page title should be \"Sign In with carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In with carsguide\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.the_new_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T18:30:54.931Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1677541800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "3-User not be able to sign up without entering password with capital letter or numeric number",
+        "description": "",
+        "id": "this-feature-is-for-sign-up-functionality-for-carguide.au-app;3-user-not-be-able-to-sign-up-without-entering-password-with-capital-letter-or-numeric-number;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 940126600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.carguide.steps.HookSteps.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 180354300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user enter email address is \"em8@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"em8@gmail.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_email_address_is(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148774900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user enter password is \"Mseminvalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mseminvalid\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.carguide.steps.SignUpPageSteps.user_enter_password_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164929400,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user click on sign up button",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.user_click_on_sign_up_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "warning sign should pop up",
+            "match": {
+              "location": "com.carguide.steps.SignUpPageSteps.warning_sign_should_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is for sign up functionality for CarGuide.au app",
+    "description": "  Description: Explains how sign up function works",
+    "id": "this-feature-is-for-sign-up-functionality-for-carguide.au-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CarGuidesSignUp.feature",
+    "tags": []
+  }
+]

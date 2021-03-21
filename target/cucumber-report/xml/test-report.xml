@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="222.099">
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validating Search cars page" time="20.515">
+        <system-out>
+            <![CDATA[Given I am on the home page "https://www.carsguide.com.au/" of CarsGuide website.passed
+When I move to the top menu.................................................passed
+And I click on "Search Cars" link...........................................passed
+And select carbrand as "Audi" from Anymake dropdown.........................passed
+And select carmodel as "A6" from SelectModel dropdown.......................passed
+And select location as "NSW - Sydney" from AnyLocation dropdown.............passed
+And select price as "$25,000" from price dropdown...........................passed
+And I click on Find_My_Next_Car button......................................passed
+Then I should see list of search cars "under $25,000".......................passed
+And the page title should be "Audi A6 Under 25000 for Sale Sydney NSW | carsguide".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validating Search cars page 2" time="16.684">
+        <system-out>
+            <![CDATA[Given I am on the home page "https://www.carsguide.com.au/" of CarsGuide website.passed
+When I move to the top menu.................................................passed
+And I click on "Search Cars" link...........................................passed
+And select carbrand as "BMW" from Anymake dropdown..........................passed
+And select carmodel as "3 Series" from SelectModel dropdown.................passed
+And select location as "NSW - New England" from AnyLocation dropdown........passed
+And select price as "$20,000" from price dropdown...........................passed
+And I click on Find_My_Next_Car button......................................passed
+Then I should see list of search cars "under $20,000".......................passed
+And the page title should be "Bmw 3 Series Under 20000 for Sale New England NSW | carsguide".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validating Used cars page" time="17.897">
+        <system-out>
+            <![CDATA[Given I am on the home page "https://www.carsguide.com.au/" of CarsGuide website.passed
+When I move to the top menu.................................................passed
+And I click on "Used" link..................................................passed
+And select carbrand as "Audi" from Anymake dropdown.........................passed
+And select carmodel as "A6" from SelectModel dropdown.......................passed
+And select location as "NSW - Sydney" from AnyLocation dropdown.............passed
+And select price as "$25,000" from price dropdown...........................passed
+And I click on Find_My_Next_Car button......................................passed
+Then I should see list of search cars "under $25,000".......................passed
+And the page title should be "Used Audi A6 Under 25000 for Sale Sydney NSW | carsguide".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validating Used cars page 2" time="18.155">
+        <system-out>
+            <![CDATA[Given I am on the home page "https://www.carsguide.com.au/" of CarsGuide website.passed
+When I move to the top menu.................................................passed
+And I click on "Used" link..................................................passed
+And select carbrand as "BMW" from Anymake dropdown..........................passed
+And select carmodel as "3 Series" from SelectModel dropdown.................passed
+And select location as "NSW - New England" from AnyLocation dropdown........passed
+And select price as "$20,000" from price dropdown...........................passed
+And I click on Find_My_Next_Car button......................................passed
+Then I should see list of search cars "under $20,000".......................passed
+And the page title should be "Used Bmw 3 Series Under 20000 for Sale New England NSW | carsguide".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validating New cars page" time="15.664">
+        <system-out>
+            <![CDATA[Given I am on the home page "https://www.carsguide.com.au/" of CarsGuide website.passed
+When I move to the top menu.................................................passed
+And I click on "New" link...................................................passed
+And select carbrand as "Audi" from Anymake dropdown.........................passed
+And select carmodel as "A6" from SelectModel dropdown.......................passed
+And select location as "NSW - Sydney" from AnyLocation dropdown.............passed
+And select price as "$100,000" from price dropdown..........................passed
+And I click on Find_My_Next_Car button......................................passed
+Then I should see list of search cars "under $100,000"......................passed
+And the page title should be "New Audi A6 Under 100000 for Sale Sydney NSW | carsguide".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validating New cars page 2" time="17.804">
+        <system-out>
+            <![CDATA[Given I am on the home page "https://www.carsguide.com.au/" of CarsGuide website.passed
+When I move to the top menu.................................................passed
+And I click on "New" link...................................................passed
+And select carbrand as "BMW" from Anymake dropdown..........................passed
+And select carmodel as "3 Series" from SelectModel dropdown.................passed
+And select location as "NSW - New England" from AnyLocation dropdown........passed
+And select price as "$150,000" from price dropdown..........................passed
+And I click on Find_My_Next_Car button......................................passed
+Then I should see list of search cars "under $150,000"......................passed
+And the page title should be "New Bmw 3 Series Under 150000 for Sale New England NSW | carsguide".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This functionality describe the signIn feature for CarGuide.au application" name="User able to sign in with valid email and valid password" time="18.724">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign in link.............................................passed
+Then sign in page should display "Sign In with carsguide"...................passed
+When user click on sign in tab..............................................passed
+And user enter email address is "bsemran@hotmail.com".......................passed
+And user enter password is "Mse67890".......................................passed
+And user click on sign in button............................................passed
+Then home page should display "CarsGuide: Car Reviews - New & Used Car Sales".passed
+And user name "Mike" display at the top right corner........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This functionality describe the signIn feature for CarGuide.au application" name="User not be able to sign in with invalid email and invalid password" time="12.598">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign in link.............................................passed
+Then sign in page should display "Sign In with carsguide"...................passed
+When user click on sign in tab..............................................passed
+And user enter email address is "invalid89@hotmail.com".....................passed
+And user enter password is "invalid67890"...................................passed
+And user click on sign in button............................................passed
+Then sign in page display "Sign In with carsguide"..........................passed
+And error message should display with "Wrong email or password."............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This functionality describe the signIn feature for CarGuide.au application" name="User not be able to sign in with valid email and empty password" time="11.103">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign in link.............................................passed
+Then sign in page should display "Sign In with carsguide"...................passed
+When user click on sign in tab..............................................passed
+And user enter email address is "bsemran@hotmail.com".......................passed
+And user enter password is ""...............................................passed
+And user click on sign in button............................................passed
+Then sign in page display "Sign In with carsguide"..........................passed
+And warning sign "Can't be blank" should pop up.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This functionality describe the signIn feature for CarGuide.au application" name="User not be able to sign in with empty email and empty password" time="10.653">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign in link.............................................passed
+Then sign in page should display "Sign In with carsguide"...................passed
+When user click on sign in tab..............................................passed
+And user enter email address is ""..........................................passed
+And user enter password is ""...............................................passed
+And user click on sign in button............................................passed
+Then sign in page display "Sign In with carsguide"..........................passed
+And warning sign "Can't be blank" should pop up.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This feature is for sign up functionality for CarGuide.au app" name="1-User able to sign up by entering all the mandatory field" time="11.696">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign up link.............................................passed
+Then sign up page should display with text "SIGN UP"........................passed
+And the new page title should be "Sign In with carsguide"...................passed
+When user enter email address is "em7@gmail.com"............................passed
+And user enter password is "Msem7890".......................................passed
+And user enter first name is "Mike".........................................passed
+And user enter last name is "Davis".........................................passed
+And user click on sign up button............................................passed
+Then user should see the verification message...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This feature is for sign up functionality for CarGuide.au app" name="1-User able to sign up by entering all the mandatory field 2" time="13.208">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign up link.............................................passed
+Then sign up page should display with text "SIGN UP"........................passed
+And the new page title should be "Sign In with carsguide"...................passed
+When user enter email address is "em8@gmail.com"............................passed
+And user enter password is "Mshj9090".......................................passed
+And user enter first name is "Tim"..........................................passed
+And user enter last name is "Bunay".........................................passed
+And user click on sign up button............................................passed
+Then user should see the verification message...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This feature is for sign up functionality for CarGuide.au app" name="2-User not be able to sign up by missing mandatory field" time="11.374">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign up link.............................................passed
+Then sign up page should display with text "SIGN UP"........................passed
+And the new page title should be "Sign In with carsguide"...................passed
+When user enter email address is "".........................................passed
+And user enter password is "Msem7890".......................................passed
+And user click on sign up button............................................passed
+Then warning sign "Can't be blank" should pop up............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This feature is for sign up functionality for CarGuide.au app" name="3-User not be able to sign up without entering password with capital letter or numeric number" time="13.231">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign up link.............................................passed
+Then sign up page should display with text "SIGN UP"........................passed
+And the new page title should be "Sign In with carsguide"...................passed
+When user enter email address is "em7@gmail.com"............................passed
+And user enter password is "sem7890"........................................passed
+And user click on sign up button............................................passed
+Then warning sign should pop up.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="This feature is for sign up functionality for CarGuide.au app" name="3-User not be able to sign up without entering password with capital letter or numeric number 2" time="12.055">
+        <system-out>
+            <![CDATA[Given not a existing user...................................................passed
+When user navigate to the application site "https://www.carsguide.com.au/"..passed
+Then home page should display with text "Sign up / Sign in" on right hand corner.passed
+And the page title should be "CarsGuide: Car Reviews - New & Used Car Sales".passed
+When user click on sign up link.............................................passed
+Then sign up page should display with text "SIGN UP"........................passed
+And the new page title should be "Sign In with carsguide"...................passed
+When user enter email address is "em8@gmail.com"............................passed
+And user enter password is "Mseminvalid"....................................passed
+And user click on sign up button............................................passed
+Then warning sign should pop up.............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
