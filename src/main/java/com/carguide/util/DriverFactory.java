@@ -148,7 +148,7 @@ public class DriverFactory {
             	ChromeOptions options = new ChromeOptions();
            	 	options.addArguments("--ignore-certificate-errors")
                 		.addArguments("--whitelisted-ips=\"\"");
-           	 
+  
            	 	
             	DesiredCapabilities caps = new DesiredCapabilities();
                 caps.setCapability("os_version", "Catalina");
