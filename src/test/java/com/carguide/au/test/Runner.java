@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		//dryRun = true,
-		tags = "@Regression",
+		tags = "@Debug",
 		features = "src/test/resources/features/",
 		//features = "src/test/resources/features/CarGuidesFindADealer.feature",
 		glue ={"com.carguide.steps"},
