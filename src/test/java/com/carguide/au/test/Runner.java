@@ -18,6 +18,6 @@ import io.cucumber.junit.CucumberOptions;
 		)
 public class Runner {
 	
-	//Git checkup
+	//Git checkup and push
 
 }
